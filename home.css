@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+
+body div {
+  /* width: 100px; */
+  /* border: 1px solid red; */
+  /* background-color: aqua; */
+}
+
+/* NAVBAR SECTION */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 65px;
+  background-color: white;
+}
+.logo-header {
+  font-size: large;
+  width: auto;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+}
+.search-bar {
+  background-color: white;
+  border-radius: 20px;
+  width: 440px;
+}
+
+.search-bar input {
+  width: 400px;
+  height: 35px;
+  margin: 2px;
+  padding-left: 10px;
+  border: none;
+  background: white;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.profile-ctn {
+  display: flex;
+  column-gap: 6px;
+  padding: 6px;
+}
+.profile-ctn div {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width: 30px;
+  height: 26px;
+  margin: auto;
+  display: flex;
+  padding: 2px 1px;
+  justify-content: center;
+}
+i {
+  font-size: 22px;
+  cursor: pointer;
+}
+.fa-solid {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+/* HERO SECTION */
+
+.hero-sec div {
+  /* border: 1px solid red; */
+}
+.hero-sec {
+  border: 1px solid red;
+  display: grid;
+  margin: 20px 80px;
+  height: fit-content;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: space-between;
+}
+.activity-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.see-all-ctn {
+  width: 60px;
+  height: 30px;
+}
+.see-all-btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: white;
+  color: rgb(10, 89, 141);
+  font-weight: 600;
+}
+.post-ctn {
+  margin: 10px;
+}
+
+.stories-ctn-one {
+  height: 100px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2px;
+}
+
+.stories-ctn {
+  display: flex;
+  column-gap: 6px;
+  padding: 10px;
+  height: 100px;
+  width: auto;
+  margin: 5px;
+  border-radius: 10px;
+  border: 0.5px solid grey;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+.picture-ctn {
+  height: 62px;
+  width: 62px;
+  border-radius: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.username-ctn {
+  width: fit-content;
+  padding: 4px;
+  font-size: 12px;
+  /* border: 1px solid red; */
+}
+.picture-ctn {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  background: radial-gradient(rgba(0, 0, 0, 0.15) 60%, transparent 0),
+    radial-gradient(white 65%, transparent 0),
+    linear-gradient(to top right, deeppink, orange);
+}
+
+.picture-ctn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: circle(42%);
+}
+
+/* POSTS CTN */
+.posts-ctn {
+  height: fit-content;
+  border: 1px solid red;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+    border: 0.5px solid grey;
+
+  background-color: rgba(255, 255, 255, 0.904);
+}
+.posts-ctn div {
+  /* border: 1px solid red; */
+}
+.username-post-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+.username-info-ctn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px;
+}
+.username-picture-ctn {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.username-picture-ctn img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.user-post-ctn {
+  height: 480px;
+  width: 540px;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.user-post-ctn img {
+  height: 100%;
+  width: 100%;
+}
+
+/* POSTS ICONS CTN */
+.posts-icons {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin: 2px 12px;
+  padding: 2px;
+}
+.posts-icons-reactions {
+  padding: 4px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  
+}
+.fa-comment {
+    margin-left: 10px;
+}
+
+.posts-icons-reactions i {
+    font-size: 26px;
+}
+/* Posts Liked CTN */
+.post-liked-ctn {
+    padding: 2px 14px;
+}
+
+.user-desc {
+    display: flex;
+    padding: 2px 8px;
+    
+}

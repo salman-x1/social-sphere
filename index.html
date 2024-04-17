@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Data Table</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Sign Up Container -->
+    <div class="signup-ctn">
+      <form onsubmit="Auth.signup(event)" id="signupForm">
+        <div class="head-signup-ctn">
+          <h2>Sign Up</h2>
+          <p>Create your account within seconds</p>
+        </div>
+        <div class="username-ctn">
+          <input type="text" id="username" placeholder="Username" required />
+        </div>
+
+        <br />
+        <div class="email-ctn">
+          <input type="email" id="email" placeholder="Email Address" required />
+        </div>
+        <br />
+        <div class="password-ctn">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <br />
+        <div class="btn-ctn">
+          <button type="submit" class="button-6">Sign Up</button>
+        </div>
+        <div class="route-page-ctn">
+          <p>Already have an account?</p>
+          <a href="login.html">Login</a>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>
